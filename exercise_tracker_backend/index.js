@@ -12,7 +12,7 @@ app.use("/users",userRoutes);
 app.use("/exercises",exerciseRoutes);
 
 app.get("/",(req,res)=>{
-    res.send("Welcome to Exercise Tracker Server");
+    res.send(`Server running on PORT:${PORT}`);
 })
 
 app.listen(PORT,()=>{
